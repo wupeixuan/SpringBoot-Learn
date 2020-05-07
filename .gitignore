@@ -31,3 +31,4 @@ build/
 .vscode/
 /mvnw
 /mvnw.cmd
+/**/target/
