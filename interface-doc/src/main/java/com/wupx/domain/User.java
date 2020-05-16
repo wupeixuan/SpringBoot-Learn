@@ -1,4 +1,4 @@
-package com.wupx.interfacedoc.domain;
+package com.wupx.domain;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

@@ -1,6 +1,6 @@
-package com.wupx.interfacedoc.controller;
+package com.wupx.controller;
 
-import com.wupx.interfacedoc.domain.User;
+import com.wupx.domain.User;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;

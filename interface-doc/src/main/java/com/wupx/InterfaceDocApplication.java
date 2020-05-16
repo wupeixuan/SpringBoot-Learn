@@ -1,4 +1,4 @@
-package com.wupx.interfacedoc;
+package com.wupx;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

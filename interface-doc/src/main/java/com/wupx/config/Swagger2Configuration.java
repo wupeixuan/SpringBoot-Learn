@@ -1,4 +1,4 @@
-package com.wupx.interfacedoc.config;
+package com.wupx.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -25,7 +25,7 @@ public class Swagger2Configuration {
                 .apiInfo(apiInfo())
                 .select()
                 // swagger 文档扫描的包
-                .apis(RequestHandlerSelectors.basePackage("com.wupx.interfacedoc.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.wupx.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }
