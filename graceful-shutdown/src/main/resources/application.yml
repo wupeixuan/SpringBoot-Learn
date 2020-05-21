@@ -1,0 +1,17 @@
+# Spring Boot 2.3 配置优雅停止
+# 开启优雅停止 Web 容器，默认为 IMMEDIATE：立即停止
+#server:
+#  shutdown: graceful
+# 最大等待时间
+#spring:
+#  lifecycle:
+#    timeout-per-shutdown-phase: 30s
+
+management:
+  endpoint:
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: shutdown
