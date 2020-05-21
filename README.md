@@ -6,7 +6,7 @@
 
 - [database-version-control](https://github.com/wupeixuan/SpringBoot-Learn/tree/master/database-version-control):Spring Boot 集成 Flyway
 - [interface-doc](https://github.com/wupeixuan/SpringBoot-Learn/tree/master/interface-doc):Spring Boot 集成 Swagger 2
-- [graceful-shutdown](https://github.com/wupeixuan/SpringBoot-Learn/tree/master/database-version-control):如何优雅地停止 Spring Boot 应用？
+- [graceful-shutdown](https://github.com/wupeixuan/SpringBoot-Learn/tree/master/graceful-shutdown):如何优雅地停止 Spring Boot 应用？
 
 ## 参考文章：
 
