@@ -153,4 +153,15 @@ public class OSSService {
         List<OSSObjectSummary> objectSummaries = objectListing.getObjectSummaries();
         return objectSummaries.stream().map(OSSObjectSummary::getKey).collect(Collectors.toList());
     }
+
+    /**
+     * 设置文件访问权限
+     * 详细请参看“SDK手册 > Java-SDK > 管理文件”
+     * 链接：https://help.aliyun.com/document_detail/84838.html
+     *
+     * @param fileName
+     */
+    public void setObjectAcl(String fileName) {
+        ossClient.setObjectAcl(ossConfiguration.getBucketName(), fileName, CannedAccessControlList.PublicRead);
+    }
 }

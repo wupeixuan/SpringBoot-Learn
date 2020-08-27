@@ -83,4 +83,14 @@ public class OSSController {
     public String getSingeNatureUrl(@RequestParam("fileName") String fileName, @RequestParam("expSeconds") int expSeconds) {
         return ossService.getSingeNatureUrl(fileName, expSeconds);
     }
+
+    /**
+     * 设置文件访问权限
+     *
+     * @param fileName
+     */
+    @PostMapping(value = "/setObjectAcl")
+    public void setObjectAcl(@RequestParam("fileName") String fileName) {
+        ossService.setObjectAcl(fileName);
+    }
 }
