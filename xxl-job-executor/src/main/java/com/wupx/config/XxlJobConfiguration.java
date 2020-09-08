@@ -1,5 +1,6 @@
 package com.wupx.config;
 
+import com.wupx.jobhandler.BeanClassJobHandler;
 import com.xxl.job.core.executor.impl.XxlJobSpringExecutor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,6 +9,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
+ * XXL-JOB 配置
+ *
  * @author wupx
  * @date 2020/9/6
  */
@@ -39,9 +42,12 @@ public class XxlJobConfiguration {
     @Value("${xxl.job.executor.logretentiondays}")
     private int logRetentionDays;
 
-    @Bean(initMethod = "start", destroyMethod = "destroy")
+    @Bean
     public XxlJobSpringExecutor xxlJobExecutor() {
         logger.info(">>>>>>>>>>> xxl-job config init.");
+        // registry jobhandler
+        XxlJobSpringExecutor.registJobHandler("beanClassJobHandler", new BeanClassJobHandler());
+        // init executor
         XxlJobSpringExecutor xxlJobSpringExecutor = new XxlJobSpringExecutor();
         xxlJobSpringExecutor.setAdminAddresses(adminAddresses);
         xxlJobSpringExecutor.setAppname(appname);
