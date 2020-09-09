@@ -32,6 +32,8 @@ import java.util.concurrent.TimeUnit;
 public class BeanMethodJobHandler {
 
     /**
+     * 基于方法开发的任务
+     *
      * @param param
      * @return
      * @throws Exception

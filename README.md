@@ -12,6 +12,7 @@
 - [oss](https://github.com/wupeixuan/SpringBoot-Learn/tree/master/oss):Spring Boot 集成阿里云 OSS 进行文件存储
 - [redis-cache](https://github.com/wupeixuan/SpringBoot-Learn/tree/master/redis-cache):Spring Boot 集成 Redis 实现数据缓存
 - [mail](https://github.com/wupeixuan/SpringBoot-Learn/tree/master/mail):Spring Boot 优雅地发送邮件
+- [xxl-job-executor](https://github.com/wupeixuan/SpringBoot-Learn/tree/master/xxl-job-executor):Spring Boot 集成 XXL-JOB 任务调度平台
 
 ## 参考文章：
 
@@ -22,4 +23,4 @@
 - [Spring Boot 集成 Elasticsearch 实战](https://www.tianheyu.top/archives/springboot-elasticsearch) 
 - [Spring Boot 集成阿里云 OSS 进行文件存储](https://www.tianheyu.top/archives/springboot-oss) 
 - [Spring Boot 集成 Redis 实现数据缓存](https://www.tianheyu.top/archives/springboot-redis-cache) 
-- [Spring Boot 优雅地发送邮件](https://www.tianheyu.top/archives/springboot-mail) 
+- [Spring Boot 集成 XXL-JOB 任务调度平台](https://www.tianheyu.top/archives/springboot-xxl-job-executor) 
