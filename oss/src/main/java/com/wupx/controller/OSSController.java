@@ -29,8 +29,8 @@ public class OSSController {
      * @return
      */
     @PostMapping(value = "/uploadFiles")
-    public String uploadFiles(@RequestParam("file") MultipartFile file) {
-        return ossService.uploadFile(file, "imgs");
+    public String uploadFiles(@RequestParam("file") MultipartFile file, @RequestParam("storagePath") String storagePath) {
+        return ossService.uploadFile(file, storagePath);
     }
 
     /**
